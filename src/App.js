@@ -1,15 +1,15 @@
-import logo from "./logo.svg";
-import "./App.css";
-
+import { Container } from "react-bootstrap";
 import SummaryForm from "./pages/summary/SummaryFrom";
-import Options from "./pages/entry/Options";
+import OrderEntry from "./pages/entry/OrderEntry";
+import { OrderDetailsProvider } from "./contexts/OrderDetails";
 
 function App() {
   return (
-    <>
-      <Options optionType={'scoops'}/>
-      <SummaryForm />
-    </>
+    <Container>
+      <OrderDetailsProvider>
+        <OrderEntry />
+      </OrderDetailsProvider>
+    </Container>
   );
 }
 

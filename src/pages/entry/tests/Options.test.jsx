@@ -1,5 +1,4 @@
-import { render, screen } from "@testing-library/react";
-import axios from "axios";
+import { render, screen } from "../../../test-utils/testing-library-utils";
 
 import Options from "../Options";
 
